@@ -1,4 +1,5 @@
 package maylib;
+import java.util.Scanner;
 
 public class Util {
 
@@ -8,10 +9,12 @@ public class Util {
     //文字列をそのまま返す
     public static String getString(String moji) {
         System.out.println(moji);
-        if(moji == null) {
+        Scanner scn = new Scanner(System.in);
+        String scnMoji = scn.next();
+        if(scnMoji == null) {
             return null;
         } else {
-            return moji;
+            return scnMoji;
         }
     }
 
@@ -19,32 +22,36 @@ public class Util {
     public static int getInt(String moji) {
         int judge = 0;
         System.out.println(moji);
+        Scanner scn = new Scanner(System.in);
+        String scnMoji = scn.next();
 
-        if (moji == null) {
+        if (scnMoji == null) {
             return judge;
         }
 
-        if(!moji.matches("[+-]?\\d*(\\.\\d+)?")) {
+        if(!scnMoji.matches("[+-]?\\d*(\\.\\d+)?")) {
             return judge;
         }
 
-        return Integer.parseInt(moji);
+        return Integer.parseInt(scnMoji);
     }
 
     //String型の数値をDouble型にして返す
     public static double getDouble(String moji) {
         int judge = 0;
         System.out.println(moji);
+        Scanner scn = new Scanner(System.in);
+        String scnMoji = scn.next();
 
-        if (moji == null) {
+        if (scnMoji == null) {
             return judge;
         }
 
-        if (!moji.matches("[+-]?\\d*(\\.\\d+)?")) {
+        if (!scnMoji.matches("[+-]?\\d*(\\.\\d+)?")) {
             return judge;
         }
 
-        return Double.parseDouble(moji);
+        return Double.parseDouble(scnMoji);
 
     }
 
@@ -55,16 +62,18 @@ public class Util {
         char firstMoji;
 
         System.out.println(moji);
+        Scanner scn = new Scanner(System.in);
+        String scnMoji = scn.next();
 
-        if (moji == null) {
+        if (scnMoji == null) {
             return (char) judge;
         }
 
-        if (!moji.matches("[+-]?\\d*(\\.\\d+)?")) {
+        if (!scnMoji.matches("[+-]?\\d*(\\.\\d+)?")) {
             return (char) judge;
         }
 
-        firstMoji = moji.charAt(i);
+        firstMoji = scnMoji.charAt(i);
         return firstMoji;
 
     }
