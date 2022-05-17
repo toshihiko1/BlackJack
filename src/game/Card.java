@@ -1,6 +1,8 @@
 package game;
 
 public class Card {
+    public static final Card deck = null;
+
     //定数
     int RANK = 13;
 
