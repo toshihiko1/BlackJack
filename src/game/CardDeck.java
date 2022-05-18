@@ -10,8 +10,8 @@ public class CardDeck {
 
 
     // プロパティ
-    private int max;
-    private Card[] deck;
+    int max;
+    Card[] deck;
 
     // コンストラクタ
     public CardDeck(int max) {

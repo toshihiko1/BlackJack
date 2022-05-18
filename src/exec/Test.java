@@ -26,12 +26,11 @@ public class Test {
         }
 
         a=0;
-    
+
 
         System.out.println("start");
         for(int i = 0; i < 52; i++) {
-            System.out.println("メソッドindexof:ループi番目のカード=" + deck.indexOf(i));
-            System.out.println(a++);
+            System.out.println("メソッドindexof:ループ" + a++ + "番目のカード=" + deck.indexOf(i));
         }
 
 
