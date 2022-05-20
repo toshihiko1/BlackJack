@@ -35,6 +35,7 @@ public class CardDeck {
             c.cardNumver();
             c.suitNumver();
             this.deck[i] = c;
+            System.out.println("配列deck(getNum)=" + i + this.deck[i].getNum());
         }
 
     }

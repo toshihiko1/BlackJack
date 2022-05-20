@@ -3,6 +3,7 @@ package exec;
 import maylib.Util;
 import game.Card;
 import game.CardDeck;
+import game.Player;
 
 public class Test {
     public static void main(String[] args) {
@@ -16,22 +17,28 @@ public class Test {
         //     System.out.println("");
         // }
 
+        // CardDeck deck = new CardDeck(52);
+        // Card card;
+        // int a = 0;
+
+        // while((card = deck.next()) != null) {
+        //     System.out.println("メイン:card=" + card);
+
+        // }
+
+        // a=0;
+
+
+        // System.out.println("start");
+        // for(int i = 0; i < 52; i++) {
+        //     System.out.println("メソッドindexof:ループ" + a++ + "番目のカード=" + deck.indexOf(i));
+        // }
+
         CardDeck deck = new CardDeck(52);
-        Card card;
-        int a = 0;
-
-        while((card = deck.next()) != null) {
-            System.out.println("メイン:card=" + card);
-
-        }
-
-        a=0;
-
-
-        System.out.println("start");
-        for(int i = 0; i < 52; i++) {
-            System.out.println("メソッドindexof:ループ" + a++ + "番目のカード=" + deck.indexOf(i));
-        }
+        Player p = new Player("Player", "■", deck);
+        // System.out.println(p.check());
+        p.addACard();
+        System.out.println(p.check());
 
 
     }
