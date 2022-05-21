@@ -36,7 +36,7 @@ public class Test {
 
         CardDeck deck = new CardDeck(52);
         Player p = new Player("Player", "■", deck);
-        // System.out.println(p.check());
+        System.out.println(p);
         p.addACard();
         System.out.println(p.check());
 

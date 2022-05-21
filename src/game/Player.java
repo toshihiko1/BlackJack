@@ -14,8 +14,8 @@ public class Player {
     // プロパティ
     private CardDeck deck;
     private Card[] hand;
-    private String name;
-    private String icon;
+    protected String name;
+    protected String icon;
 
     // コンストラクタ
     public Player(String name, String icon, CardDeck deck) {
@@ -113,7 +113,7 @@ public class Player {
             if(handCheck == 0) {
                 break;
             }
-            
+
             handSum = handSum + handCheck;
             handCheck = 0;
         }

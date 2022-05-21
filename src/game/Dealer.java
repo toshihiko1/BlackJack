@@ -26,6 +26,12 @@ public class Dealer extends Player{
     }
 
     public String half() {
+        String score;
+        score = String.valueOf(score());
+        return this.icon + this.name + score;
+    }
+
+    public void halfStr(StringBuilder firstNum) {
         
     }
 
